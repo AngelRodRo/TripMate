@@ -1,1 +1,17 @@
-/* CSS declarations go here */
+.navigation-transparent{
+    position: absolute;
+    z-index: 999999;
+    width: 100%;
+    color: white;
+}
+.nav-link {
+    color: white;
+}
+
+.search-lateral label {
+    color: black !important;
+}
+
+.search-lateral select.form-control {
+    border-color: #c7c7c7 !important ;
+}

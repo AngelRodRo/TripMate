@@ -1,0 +1,75 @@
+<template name="results">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="row">
+                <div class="book-form search-lateral">
+                    <h2 style="margin-bottom: 20px">Busqueda</h2>
+            
+                    <form action="#" method="post">
+                        <div class="col-md-12 ">
+                            <label><i class="fa fa-map-marker" aria-hidden="true"></i> Pais de procendencia</label>
+                            <select class="form-control">
+                                <option>India</option>
+                                <option>Japan</option>
+                                <option>America</option>
+                                <option>London</option>
+                                <option>Paris</option>
+                            </select>
+                        </div>
+                        <div class="col-md-12">
+                                <label><i class="fa fa-map-marker" aria-hidden="true"></i> A donde viajas</label>
+                                <select class="form-control">
+                                    <option>India</option>
+                                    <option>Japan</option>
+                                    <option>America</option>
+                                    <option>London</option>
+                                    <option>Paris</option>
+                                </select>
+                        </div>
+                        <div class="col-md-12 ">
+                                <label><i class="fa fa-home" aria-hidden="true"></i> ¿Cuando empieza tu viaje? </label>
+                                <select class="form-control">
+                                    <option>Real estate</option>
+                                    <option>Real Homes</option>
+                                    <option>Apartments</option>
+                                    <option>Real Flats</option>
+                                </select>
+                        </div>
+                        <div class="col-md-12">
+                            <input type="submit" value="Buscar">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <h1 style="margin: 30px 0;">Resultados</h1>
+            {{#each posts}} 
+                <div class="row">
+                    <div class="col-md-4">
+                        <img class="img-responsive" src="images/about1.jpg" alt="">
+                    </div>
+                    <div class="col-md-8">
+                        <h2>{{title}}</h2>
+                        <p> {{description}}</p>
+                        <div>
+                            <span>
+                                <i class="fa fa-map-marker"></i> Locacion 
+                            </span>
+                            <span>
+                                <i class="fa fa-map-marker"></i> Locacion 
+                            </span>
+                            <span>
+                                <i class="fa fa-map-marker"></i> Locacion 
+                            </span>
+                        </div>
+                        <div>
+                            <button class="btn btn-primary">Ver mas</button>
+                        </div>
+                    </div>
+                </div>
+            {{/each}}
+            
+        </div>
+    </div>
+</template>
